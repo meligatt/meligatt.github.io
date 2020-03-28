@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+xmlns:xlink="http://www.w3.org/1999/xlink"
+width="800"
+height="600"
+viewbox="0 0 800 600"
+version="1.1"
+class="character">
+<g id="back-hat" transform="translate(100,450) rotate(270) scale(3.5 6)">
+  <path d="M0,0
+  L100,20
+  Q125,45  100,80
+  L100,80
+  L0,100z"
+  fill="#261710" stroke-linejoin="round" stroke-width="6" stroke="#20150c"></path>
+</g>
+
+<g id="face" transform="translate(250, 200)">
+
+  <rect id="face-outline" height="230" width="300" x="0" y="0" fill="#8c8455" rx="40"/>
+
+  <g id="makeup-decoration" transform="translate(12,20) scale(0.8)">
+    <g class="decoration" transform="scale(0.8) translate(190,285) ">
+      <rect x="10" y="-10" width="10" height="10" transform="rotate(45)" fill="#4c3821"/>
+      <rect x="10" y="10" width="10" height="10" transform="rotate(45)" fill="#4c3821"/>
+      <rect x="30" y="-10" width="10" height="10" transform="rotate(45)" fill="#4c3821"/>
+      <rect x="30" y="10" width="10" height="10" transform="rotate(45)" fill="#4c3821"/>
+    </g>
+    <g class="decoration" transform="scale(0.8) translate(190,255) ">
+      <rect x="10" y="-10" width="10" height="10" transform="rotate(45)" fill="#4c3821"/>
+      <rect x="-10" y="10" width="10" height="10" transform="rotate(45)" fill="#4c3821"/>
+      <rect x="30" y="-30" width="10" height="10" transform="rotate(45)" fill="#4c3821"/>
+      <rect x="10" y="30" width="8" height="8" transform="rotate(45)" fill="#4c3821"/>
+      <rect x="10" y="10" width="10" height="10" transform="rotate(45)" fill="#4c3821"/>
+      <rect x="30" y="-10" width="10" height="10" transform="rotate(45)" fill="#4c3821"/>
+      <rect x="50" y="-10" width="8" height="8" transform="rotate(45)" fill="#4c3821"/>
+    </g>
+  </g>
+
+  <g id="hat-shadow" transform="translate(300,170) rotate(180) scale(3)">
+    <path d="M0,50
+    a1,1 0 0,0
+    100,0" fill="#261710" />
+  </g>
+  <g id="hat" transform="translate(300,180) rotate(180) scale(3)">
+    <path d="M0,50
+    a1,1 0 0,0
+    100,0" fill="#382419" />
+  </g>
+
+  <g id="hat-decoration" transform="translate(-18,-30)">
+    <path d="M20 60 Q 120 40 320 60 " stroke="#191410" stroke-width="20" fill="transparent" stroke-linecap="round"/>
+  </g>
+  <g id="hat-decoration2" transform="translate(-18,-25)">
+    <path d="M20 60 Q 120 40 320 60 " stroke="#583a34" stroke-width="4" fill="transparent" stroke-linecap="round"/>
+  </g>
+  <g id="hat-decoration3" transform="translate(-18,-45)">
+    <path d="M20 60 Q 120 40 320 60 " stroke="#38293e" stroke-width="5" fill="transparent" stroke-linecap="round"/>
+  </g>
+
+  <g id="eyes" transform="translate(0, 20)">
+    <g id="left-eyelid" class="eyes" transform="translate(10, 85)">
+      <circle id="eye" cx="60" r="30" fill="#b5ad80"/>
+    </g>
+    <g id="left-eye" class="eyes" transform="translate(10, 90)">
+      <circle id="eye" cx="60" r="30" fill="#353f78"/>
+      <g class="eyeslashes" transform="translate(23, -20)">
+        <line x1="0" y1="0" x2="10" y2="10" stroke="black" stroke-width="4"/>
+        <line x1="0" y1="10" x2="10" y2="20" stroke="black" stroke-width="4"/>
+        <line x1="0" y1="20" x2="10" y2="30" stroke="black" stroke-width="4"/>
+      </g>
+    </g>
+    <g id="right-eyelid" class="eyes" transform="translate(280, 85) scale(-1, 1)">
+      <circle id="eye" cx="60" r="30" fill="#b5ad80"/>
+    </g>
+    <g id="right-eye" class="eyes" transform="translate(280, 90) scale(-1, 1)">
+      <circle id="eye" cx="60" r="30" fill="#353f78"/>
+      <g class="eyeslashes" transform="translate(23, -20)">
+        <line x1="0" y1="0" x2="10" y2="10" stroke="black" stroke-width="4"/>
+        <line x1="0" y1="10" x2="10" y2="20" stroke="black" stroke-width="4"/>
+        <line x1="0" y1="20" x2="10" y2="30" stroke="black" stroke-width="4"/>
+      </g>
+    </g>
+  </g>
+  <g class="nose" transform="translate(135,120) scale(0.3)">
+    <polygon fill="#968e5e" stroke="#867e4f" stroke-width="6" points="30,4 4,60 60,60" stroke-linejoin="round"/>
+  </g>
+  <g class="mouth" transform="translate(128,170)">
+    <line x1="0" y1="0" x2="30" y2="0" stroke-linecap="round" stroke-width="12" stroke="#1c191e"/>
+  </g>
+</g>
+</svg>

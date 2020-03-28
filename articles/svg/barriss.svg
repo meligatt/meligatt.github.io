@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="800" height="600"  x="0" y="0">
+  <defs>
+    <pattern id="diagonal-stripe-6" patternUnits="userSpaceOnUse" width="52" height="52">
+      <image xlink:href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='52' height='52' viewBox='0 0 52 52'%3E%3Cpath fill='%232d395e' fill-opacity='1' d='M0 17.83V0h17.83a3 3 0 0 1-5.66 2H5.9A5 5 0 0 1 2 5.9v6.27a3 3 0 0 1-2 5.66zm0 18.34a3 3 0 0 1 2 5.66v6.27A5 5 0 0 1 5.9 52h6.27a3 3 0 0 1 5.66 0H0V36.17zM36.17 52a3 3 0 0 1 5.66 0h6.27a5 5 0 0 1 3.9-3.9v-6.27a3 3 0 0 1 0-5.66V52H36.17zM0 31.93v-9.78a5 5 0 0 1 3.8.72l4.43-4.43a3 3 0 1 1 1.42 1.41L5.2 24.28a5 5 0 0 1 0 5.52l4.44 4.43a3 3 0 1 1-1.42 1.42L3.8 31.2a5 5 0 0 1-3.8.72zm52-14.1a3 3 0 0 1 0-5.66V5.9A5 5 0 0 1 48.1 2h-6.27a3 3 0 0 1-5.66-2H52v17.83zm0 14.1a4.97 4.97 0 0 1-1.72-.72l-4.43 4.44a3 3 0 1 1-1.41-1.42l4.43-4.43a5 5 0 0 1 0-5.52l-4.43-4.43a3 3 0 1 1 1.41-1.41l4.43 4.43c.53-.35 1.12-.6 1.72-.72v9.78zM22.15 0h9.78a5 5 0 0 1-.72 3.8l4.44 4.43a3 3 0 1 1-1.42 1.42L29.8 5.2a5 5 0 0 1-5.52 0l-4.43 4.44a3 3 0 1 1-1.41-1.42l4.43-4.43a5 5 0 0 1-.72-3.8zm0 52c.13-.6.37-1.19.72-1.72l-4.43-4.43a3 3 0 1 1 1.41-1.41l4.43 4.43a5 5 0 0 1 5.52 0l4.43-4.43a3 3 0 1 1 1.42 1.41l-4.44 4.43c.36.53.6 1.12.72 1.72h-9.78zm9.75-24a5 5 0 0 1-3.9 3.9v6.27a3 3 0 1 1-2 0V31.9a5 5 0 0 1-3.9-3.9h-6.27a3 3 0 1 1 0-2h6.27a5 5 0 0 1 3.9-3.9v-6.27a3 3 0 1 1 2 0v6.27a5 5 0 0 1 3.9 3.9h6.27a3 3 0 1 1 0 2H31.9z'%3E%3C/path%3E%3C/svg%3E" x="0" y="0"> </image>
+    </pattern>
+  </defs>
+<g id="face-symbol" transform="translate(266, 200)">
+    <g id="face">
+      <rect id="face-outline" height="249" width="300" x="0" y="0" fill="#dccb8e" rx="40"/>
+      <g id="line-hoodoe" transform="translate(20, -20)  scale(1.7 1)">
+        <path d="M20 40 Q 70 20 130 40" stroke="#35134f" stroke-width="20" fill="transparent" stroke-linecap="round"/>
+      </g>
+
+      <g id="eyes" transform="translate(0, 20)">
+        <g id="left-eye" class="eyes" transform="translate(10, 90)">
+          <circle id="eye" cx="60" r="30" fill="#101069"/>
+          <g class="eyeslashes" transform="translate(23, -20)">
+            <line x1="0" y1="0" x2="10" y2="10" stroke="#270e2f" stroke-width="4"/>
+            <line x1="0" y1="10" x2="10" y2="20" stroke="#270e2f" stroke-width="4"/>
+            <line x1="0" y1="20" x2="10" y2="30" stroke="#270e2f" stroke-width="4"/>
+          </g>
+        </g>
+        <g id="right-eye" class="eyes" transform="translate(280, 90) scale(-1, 1)">
+          <circle id="eye" cx="60" r="30" fill="#101069"/>
+          <g class="eyeslashes" transform="translate(23, -20)">
+            <line x1="0" y1="0" x2="10" y2="10" stroke="#270e2f" stroke-width="4"/>
+            <line x1="0" y1="10" x2="10" y2="20" stroke="#270e2f" stroke-width="4"/>
+            <line x1="0" y1="20" x2="10" y2="30" stroke="#270e2f" stroke-width="4"/>
+          </g>
+        </g>
+      </g>
+      <g class="nose" transform="translate(135,120) scale(0.3) rotate(180) translate(-60,-100)">
+        <polygon fill="#c0ae7b" stroke="#c0ae7b" stroke-width="4" points="30,4 4,60 60,60" stroke-linejoin="round"/>
+      </g>
+
+      <g class="decoration" transform="scale(0.7) translate(120,200) ">
+        <rect x="10" y="-10" width="10" height="10" transform="rotate(45)" fill="#66553f"/>
+        <rect x="10" y="10" width="10" height="10" transform="rotate(45)" fill="#66553f"/>
+        <rect x="30" y="-10" width="10" height="10" transform="rotate(45)" fill="#66553f"/>
+        <rect x="30" y="10" width="10" height="10" transform="rotate(45)" fill="#66553f"/>
+      </g>
+
+      <g transform="scale(0.6) translate(45,10)">
+        <g class="decoration" transform="translate(140,200)">
+          <rect x="10" y="-10" width="10" height="10" transform="rotate(45)" fill="#66553f"/>
+          <rect x="10" y="10" width="10" height="10" transform="rotate(45)" fill="#66553f"/>
+          <rect x="30" y="-10" width="10" height="10" transform="rotate(45)" fill="#66553f"/>
+        </g>
+        <g class="decoration" transform="translate(220,200)">
+          <rect x="10" y="-10" width="10" height="10" transform="rotate(45)" fill="#66553f"/>
+          <rect x="10" y="10" width="10" height="10" transform="rotate(45)" fill="#66553f"/>
+          <rect x="30" y="-10" width="10" height="10" transform="rotate(45)" fill="#66553f"/>
+        </g>
+      </g>
+
+      <g class="decoration" transform="scale(0.8) translate(170,120)">
+        <rect x="10" y="-10" width="10" height="10" transform="rotate(45)" fill="#66553f"/>
+        <rect x="10" y="10" width="10" height="10" transform="rotate(45)" fill="#66553f"/>
+        <rect x="30" y="-10" width="10" height="10" transform="rotate(45)" fill="#66553f"/>
+      </g>
+
+      <g class="decoration" transform="scale(0.7) translate(260,200)">
+        <rect x="10" y="-10" width="10" height="10" transform="rotate(45)" fill="#66553f"/>
+        <rect x="10" y="10" width="10" height="10" transform="rotate(45)" fill="#66553f"/>
+        <rect x="30" y="-10" width="10" height="10" transform="rotate(45)" fill="#66553f"/>
+        <rect x="30" y="10" width="10" height="10" transform="rotate(45)" fill="#66553f"/>
+      </g>
+      <g class="mouth" transform="translate(135,170)">
+        <line x1="0" y1="0" x2="20" y2="0" stroke-linecap="round" stroke-width="5" stroke="#714d70"/>
+      </g>
+    </g>
+  </g>
+
+  <g transform="translate(-120, 0) scale(2.3, 1.42)">
+    <g id="hood-bg">
+      <path
+      fill="#5b606b"
+      d="M318.832,186.307c-0.616-28.312-16.49-105.835-86.333-99.965c-69.843-5.87-85.718,71.655-86.333,99.965
+      c-2,92-47.333,152-47.333,152L232.5,424.975l133.667-86.668C366.165,338.307,320.832,278.307,318.832,186.307z M232.499,318.47
+      c-60-38-67-77.496-64-120.496c2.495-35.763,48.562-53.538,64-58.51c15.438,4.972,61.505,22.747,64,58.51
+      C299.499,240.974,292.499,280.47,232.499,318.47z"/>
+    </g>
+    <g id="hood-symbol">
+      <path
+      style="fill: url(#diagonal-stripe-6) #fff;"
+      stroke="#2d303c"
+      stroke-width="3"
+      d="M318.832,186.307c-0.616-28.312-16.49-105.835-86.333-99.965c-69.843-5.87-85.718,71.655-86.333,99.965
+      c-2,92-47.333,152-47.333,152L232.5,424.975l133.667-86.668C366.165,338.307,320.832,278.307,318.832,186.307z M232.499,318.47
+      c-60-38-67-77.496-64-120.496c2.495-35.763,48.562-53.538,64-58.51c15.438,4.972,61.505,22.747,64,58.51
+      C299.499,240.974,292.499,280.47,232.499,318.47z"/>
+    </g>
+  </g>
+
+</svg>

@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+xmlns:xlink="http://www.w3.org/1999/xlink"
+width="800"
+height="600"
+viewbox="0 0 800 600"
+version="1.1"
+class="character">
+
+<defs>
+<linearGradient id="hair-gradient2" x1="0" y1="0" x2="0" y2="1">
+  <stop offset="10%" style="stop-color:#131d39;stop-opacity:1" />
+  <stop offset="30%" style="stop-color:#133a60;stop-opacity:1" />
+  <stop offset="70%" style="stop-color:#28adb0;stop-opacity:1" />
+  <stop offset="100%" style="stop-color:#3ec996;stop-opacity:1" />
+</linearGradient>
+<pattern id="wiggle" patternUnits="userSpaceOnUse" width="9" height="9">
+  <image xlink:href="data:image/svg+xml,%3Csvg width='9' height='9' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2328adb0' fill-opacity='1'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E" x="0" y="0"> </image>
+</pattern>
+</defs>
+
+<g id="face" transform="translate(250, 130)">
+<g id="mechas-left">
+  <g transform="translate(30,85) scale(-1,1) rotate(-40)">
+    <path d="M 0 0 A 10 20 0 1 0
+    0 100  A 5 20 0 1 1
+    0 0z" fill="url(#hair-gradient2)" />
+  </g>
+  <g transform="translate(30,105) scale(-1,1) rotate(-40)">
+    <path d="M 0 0 A 10 20 0 1 0
+    0 100  A 5 20 0 1 1
+    0 0z" fill="url(#hair-gradient2)" />
+  </g>
+  <g transform="translate(30,115) scale(-1,1) rotate(-40)">
+    <path d="M 0 0 A 10 20 0 1 0
+    0 100  A 5 20 0 1 1
+    0 0z" fill="url(#hair-gradient2)" />
+  </g>
+</g>
+<g id="mechas-right" transform="translate(250,20) scale(1,-1) rotate(-160)">
+  <g transform="translate(30,85) scale(-1,1) rotate(-40)">
+    <path d="M 0 0 A 10 20 0 1 0
+    0 100  A 5 20 0 1 1
+    0 0z" fill="url(#hair-gradient2)" />
+  </g>
+  <g transform="translate(30,105) scale(-1,1) rotate(-40)">
+    <path d="M 0 0 A 10 20 0 1 0
+    0 100  A 5 20 0 1 1
+    0 0z" fill="url(#hair-gradient2)" />
+  </g>
+  <g transform="translate(30,115) scale(-1,1) rotate(-40)">
+    <path d="M 0 0 A 10 20 0 1 0
+    0 100  A 5 20 0 1 1
+    0 0z" fill="url(#hair-gradient2)" />
+  </g>
+</g>
+<rect id="face-outline" height="230" width="300" x="0" y="0" fill="#E6BE8D" rx="40"/>
+<g id="eyes" transform="translate(0, 20)">
+  <g id="left-eye" class="eyes" transform="translate(10, 90)">
+    <g transform="translate(12,-95) rotate(8)">
+      <path d="M20 60 Q 60 30 100 60" stroke="#402507" stroke-width="3.5" fill="transparent" stroke-linecap="round"/>
+    </g>
+    <g class="eyeslashes" transform="translate(23, -20)">
+      <line x1="0" y1="0" x2="10" y2="10" stroke="#020202" stroke-width="4" stroke-linecap="round"/>
+      <line x1="0" y1="10" x2="10" y2="20" stroke="#020202" stroke-width="4" stroke-linecap="round"/>
+      <line x1="0" y1="20" x2="10" y2="30" stroke="#020202" stroke-width="4" stroke-linecap="round"/>
+    </g>
+    <circle id="eye" cx="60" r="30" fill="#985928"/>
+  </g>
+  <g id="right-eye" class="eyes" transform="translate(280, 90) scale(-1, 1)">
+    <g transform="translate(8,-95) rotate(8)">
+      <path d="M20 60 Q 60 30 100 60" stroke="#402507" stroke-width="3.5" fill="transparent" stroke-linecap="round"/>
+    </g>
+    <g class="eyeslashes" transform="translate(23, -20)">
+      <line x1="0" y1="0" x2="10" y2="10" stroke="#020202" stroke-width="4" stroke-linecap="round"/>
+      <line x1="0" y1="10" x2="10" y2="20" stroke="#020202" stroke-width="4" stroke-linecap="round"/>
+      <line x1="0" y1="20" x2="10" y2="30" stroke="#020202" stroke-width="4" stroke-linecap="round"/>
+    </g>
+    <circle id="eye" cx="60" r="30" fill="#985928"/>
+  </g>
+</g>
+<g transform="translate(-80, -155) scale(4.6, 3.85)">
+  <path
+  fill-rule="evenodd"
+  clip-rule="evenodd"
+  d="M12.429,30.915c5.405-11.385,18.577-19.431,35.492-18.347
+  c6.734,0.433,14.178,0.855,21.2,8.408c13.667,1.925,23.171,11.092,22.08,30.998C90.224,69.771,77.762,85.373,75.255,87.53
+  c3.989-21.808,3.845-32.716-8.136-44.409c-3.275,5.826-10.608,14.977-20.602,18.003c3.749-3.707,7.59-7.398,9.191-10.446
+  c-5.373,5.979-13.767,9.691-20.495,11.235c2.502-3.064,5.652-8.269,5.652-8.269c0.001-0.003-7.93,7.284-11.934,9.299
+  c-3.185,0.433-5.535,0.531-7.081,0.583c0,0,0,0,0,0c-5.704,13.101-1.307,19.543,1.443,24.004
+  C11.076,73.751,3.92,48.851,12.429,30.915z"
+  fill="url(#hair-gradient2)"
+  stroke-width="1"
+  stroke="url(#hair-gradient2)"/>
+</g>
+<g transform="translate(-80, -155) scale(4.6, 3.85)">
+  <path
+  fill-rule="evenodd"
+  clip-rule="evenodd"
+  d="M12.429,30.915c5.405-11.385,18.577-19.431,35.492-18.347
+  c6.734,0.433,14.178,0.855,21.2,8.408c13.667,1.925,23.171,11.092,22.08,30.998C90.224,69.771,77.762,85.373,75.255,87.53
+  c3.989-21.808,3.845-32.716-8.136-44.409c-3.275,5.826-10.608,14.977-20.602,18.003c3.749-3.707,7.59-7.398,9.191-10.446
+  c-5.373,5.979-13.767,9.691-20.495,11.235c2.502-3.064,5.652-8.269,5.652-8.269c0.001-0.003-7.93,7.284-11.934,9.299
+  c-3.185,0.433-5.535,0.531-7.081,0.583c0,0,0,0,0,0c-5.704,13.101-1.307,19.543,1.443,24.004
+  C11.076,73.751,3.92,48.851,12.429,30.915z"
+  fill="url(#wiggle)" />
+</g>
+<g class="nose" transform="translate(135,120) scale(0.3)">
+  <polygon fill="#E6BE8D" stroke="#bf976e" stroke-width="6" points="30,4 4,60 60,60" stroke-linejoin="round"/>
+</g>
+<g class="mouth" transform="translate(135,170)">
+  <line x1="0" y1="0" x2="20" y2="0" stroke-linecap="round" stroke-width="5" stroke="#de8b6e"/>
+</g>
+</g>
+</svg>
