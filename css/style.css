@@ -291,8 +291,8 @@ a {
   background-size: cover;
   border: 0.3rem dotted #ffffff;
   border-radius: 5%;
-  -webkit-animation: showAvatar 0.9s cubic-bezier(1, 0, 0, 0.92);
-  animation: showAvatar 0.9s cubic-bezier(1, 0, 0, 0.92);
+  /* -webkit-animation: showAvatar 0.9s cubic-bezier(1, 0, 0, 0.92); */
+  /* animation: showAvatar 0.9s cubic-bezier(1, 0, 0, 0.92); */
 }
 
 @-webkit-keyframes showAvatar {
