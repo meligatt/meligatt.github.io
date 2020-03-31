@@ -48,18 +48,23 @@ a {
   padding-top: 2rem;
 }
 
+.Header p {
+  font-size: 1rem;
+  color: #555555;
+}
+
 .Header-title {
   font-family: 'PT Serif', serif;
-  font-size: 2.1rem;
+  font-size: 2rem;
   font-weight: bold;
   text-transform: uppercase;
   margin: 1rem 0;
 }
 
 .Header-subTitle {
-  color: #E91E63;
+  color: #921d7d;
   font-family: 'Open Sans', sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 .Blog-title {
@@ -77,7 +82,7 @@ a {
 }
 
 .Blog-subTitle {
-  color: #E91E63;
+  color: #1f7148;
   font-size: 1.2rem;
   padding: 0 2rem;
   font-weight: bold;
@@ -91,7 +96,7 @@ a {
 }
 
 .Article-post {
-  padding-bottom: 2rem;
+  margin-bottom: 6rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -365,10 +370,9 @@ a {
   width: 30%;
   color: #EBEBEB;
   text-align: center;
-  background-color: #000;
+  background-color: #292A2C;
   border: 10px solid #292A2C;
-  border-radius: 8px;
-  box-shadow: -10px 11px 0px 3px #E5E5E5;
+  border-radius: 4px;
 }
 
 .Card img {
