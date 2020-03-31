@@ -92,6 +92,9 @@ a {
 
 .Article-post {
   padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .PrimaryNav {
@@ -359,7 +362,7 @@ a {
 .Card {
   position: relative;
   display: block;
-  width: 25%;
+  width: 30%;
   color: #EBEBEB;
   text-align: center;
   background-color: #000;
