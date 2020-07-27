@@ -1,0 +1,54 @@
+.falcon-h1-title {
+  font-family: "PT Serif", serif;
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 0.5rem 0;
+}
+
+.falcon-btn-primary {
+  color: white;
+  background-color: red;
+  /* outline: none; */
+}
+
+.falcon-link-primary {
+  color: grey;
+  /* outline: none; */
+}
+
+.falcon-toggle-button {
+  border: 1px solid red;
+  cursor: pointer;
+}
+
+.crew-list {
+  display: none;
+}
+
+.falcon-cards {
+  display: flex;
+}
+.falcon-card-item {
+  border: 2px solid red;
+  margin: 1rem;
+  padding: 1rem;
+  list-style: none;
+}
+
+.falcon-status-success {
+  background-color: green;
+  padding: 1rem;
+  width: 80px;
+  height: 80px;
+}
+.falcon-status-error {
+  background-color: red;
+  padding: 1rem;
+  width: 80px;
+  height: 80px;
+}
+
+.falcon-btn-shoot {
+  background-color: red;
+  color: orange;
+}

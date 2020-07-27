@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Melissa Gattoni | Frontend developer | Art Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:title" content="Melissa Gattoni | Frontend developer" />
+    <meta
+      property="og:description"
+      content="I am Frontend developer with experience in JS, CSS, HTML, React, Accessibility."
+    />
+    <meta property="og:url" content="https://meligatt.github.io" />
+    <!-- <meta property="og:image"
+      content="https://s3-us-west-2.amazonaws.com/s.cdpn.io/708107/Melissa-gattoni-frontend-engineer.jpg" /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+    />
+
+    <link
+      rel="stylesheet prefetch"
+      href="https://fonts.googleapis.com/css?family=Ropa+Sans:400,400i"
+    />
+    <link
+      rel="stylesheet prefetch"
+      href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,400i,500,700"
+    />
+    <link
+      rel="stylesheet prefetch"
+      href="https://fonts.googleapis.com/css?family=Rubik:400,700"
+    />
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="./falcon-a11y-styles.css" />
+  </head>
+
+  <body class="blog">
+    <div class="Wrapper">
+      <div class="Header">
+        <!-- bad: looks like title but it is not  -->
+        <div class="falcon-h1-title">Millenium Falcon Dashboard</div>
+        <!-- <h1 class="Blog-title">Millenium Falcon</h1> -->
+      </div>
+
+      <main class="MainContent">
+        <div class="Container">
+          <div>
+            <button class="falcon-btn-primary">action 1</button>
+            <button class="falcon-btn-primary">action 2</button>
+            <button class="falcon-btn-primary">action 3</button>
+          </div>
+          <div>
+            <a class="falcon-link-primary" href="www.starwars.com">link 1</a>
+            <a class="falcon-link-primary" href="www.starwars.com">link 2</a>
+            <a class="falcon-link-primary" href="www.starwars.com">link 3</a>
+          </div>
+
+          <div>
+            <a role="button" class="falcon-link-primary" onclick="myFunction()">
+              🚀
+            </a>
+            <div id="demo"></div>
+          </div>
+
+          <div>
+            bad chack:
+            <input type="checkbox" id="scales" name="scales" checked />
+            <label>Scales</label>
+          </div>
+
+          <div>
+            good check:
+            <input type="checkbox" id="horns" name="horns" />
+            <label for="horns">Horns</label>
+          </div>
+
+          <fieldset class="Fieldset__FieldsetStyled-sc-5jxper-0 gCKcwT">
+            <legend class="Fieldset__LegendStyled-sc-5jxper-1 lnphGi">
+              Good: move with arrow keys
+            </legend>
+            <label for="cumulativeAccuracy" style="margin: 0.5rem 0px;"
+              ><input
+                type="radio"
+                id="cumulativeAccuracy"
+                name="option"
+                value="cumulativeAccuracy"
+                checked=""
+              />Accuracy</label
+            >
+            <label for="cumulativeBits" style="margin: 0.5rem 0px;"
+              ><input
+                type="radio"
+                id="cumulativeBits"
+                name="option"
+                value="cumulativeBits"
+              />Bits</label
+            >
+          </fieldset>
+
+          <fieldset class="Fieldset__FieldsetStyled-sc-5jxper-0 gCKcwT">
+            <!--  (ie. I'm totally guilty here:
+              http://tipresias.net/ ) -->
+            <legend class="Fieldset__LegendStyled-sc-5jxper-1 lnphGi">
+              Bad: move with tab to select option
+            </legend>
+            <label for="cumulativeAccuracy" style="margin: 0.5rem 0px;"
+              ><input
+                type="radio"
+                id="cumulativeAccuracy"
+                name="option1"
+                value="cumulativeAccuracy"
+              />Accuracy</label
+            >
+            <label for="cumulativeBits" style="margin: 0.5rem 0px;"
+              ><input
+                type="radio"
+                id="cumulativeBits"
+                name="option2"
+                value="cumulativeBits"
+              />Bits</label
+            >
+          </fieldset>
+
+          <div>
+            <!-- (bad) -->
+            <div class="falcon-toggle-button" onclick="toggleList()">
+              Show Crew members
+            </div>
+            <ul id="crew-list" class="crew-list">
+              <li class="dqpl-option" id="default">Chewbacca</li>
+              <li class="dqpl-option">Leia</li>
+              <li class="dqpl-option">Luke</li>
+              <li class="dqpl-option">Lando</li>
+              <li class="dqpl-option">R2D2</li>
+            </ul>
+          </div>
+          <!-- bad -->
+          <div>
+            <ul>
+              <div>
+                <li>item 1</li>
+                <li>item 2</li>
+                <li>item 3</li>
+              </div>
+            </ul>
+          </div>
+
+          <!-- bad -->
+          <div>
+            <ul>
+              <div><li>item 1</li></div>
+              <div><li>item 2</li></div>
+              <div><li>item 3</li></div>
+            </ul>
+          </div>
+
+          <!-- looks like list! but just generic divs, seantically AT don't read it as list, nor anounce items -->
+          <div class="falcon-cards">
+            <div class="falcon-card-item">div card1</div>
+            <div class="falcon-card-item">div card2</div>
+            <div class="falcon-card-item">div card3</div>
+          </div>
+          <!-- better: Screen reader will anounce: list item, 3 items -->
+          <ul class="falcon-cards">
+            <li class="falcon-card-item">li card1</li>
+            <li class="falcon-card-item">li card2</li>
+            <li class="falcon-card-item">li card3</li>
+          </ul>
+
+          <div>
+            <h2>
+              title 2
+            </h2>
+            <p>stuff...</p>
+            <p>stuff...</p>
+            <p>stuff...</p>
+          </div>
+          <!-- headings: -->
+          <div>
+            <!-- h1 repeared -->
+            <div>
+              <h1>Falcon Manual:</h1>
+              <h2>Parts:</h2>
+              <h3>cockpit</h3>
+              <h3>weapons</h3>
+            </div>
+            <!-- bad for AT, h1 breaking hierarchy,  -->
+            <div>
+              <h1>Troubleshooting:</h1>
+              <h3>What to do when on Fire</h3>
+              <p>What to do when on Navicomputer failure</p>
+            </div>
+          </div>
+          <!-- good -->
+          <!-- 
+            <div>
+            <h2>Falcon Manual:</h2>
+            <h3>Parts:</h3>
+            <h4>cockpit</h4>
+            <h4>weapons</h4>
+            <h3>Troubleshooting:</h3>
+            <h4>Fire</h4>
+            <h4>Navicomputer failure</h4>
+          </div> -->
+        </div>
+        <!-- relay only on color for status -->
+        <div>
+          <div class="falcon-status-success">
+            🟢
+          </div>
+          <div class="falcon-status-error">
+            🔴
+          </div>
+        </div>
+        Better:
+        <div>
+          <div class="falcon-status-success">
+            🟢Sucess!
+          </div>
+          <div class="falcon-status-error">
+            🔴 Error!
+          </div>
+        </div>
+        <!-- color contrast -->
+        <div>
+          <button class="falcon-btn-shoot">
+            Shoot
+          </button>
+        </div>
+
+        <div>
+          <!-- Examples on writing for A/C -->
+          <ul>
+            <li>I can Click on the button and a thing will open</li>
+            <li>
+              I can Click OR Hit Enter on the button and a thing will open
+            </li>
+            <li>I can see the contnt in...</li>
+            <li>I can see OR hear....</li>
+          </ul>
+        </div>
+
+        <div>
+          <!-- learn the basic shortcuts for Screen readers -->
+          Lear the basic shortcuts to:
+          <ul>
+            <li>Turn On/Off VoiceOver</li>
+            <li>Adjust VoiceOver settings</li>
+            <li>
+              Open VoiceOver rotor
+            </li>
+            <li>navigation with keyboard (get to the url bar)</li>
+            <li>w3c Authoring practices</li>
+          </ul>
+        </div>
+      </main>
+    </div>
+
+    <script>
+      function myFunction() {
+        document.getElementById("demo").innerHTML =
+          "Jumping to lightspeed in 3..2..1..";
+      }
+
+      function toggleList() {
+        var elem = document.querySelector("#crew-list");
+        if (elem.style.display === "block") {
+          elem.style.display = "none";
+        } else {
+          elem.style.display = "block";
+        }
+      }
+    </script>
+  </body>
+</html>
