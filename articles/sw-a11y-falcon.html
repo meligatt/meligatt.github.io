@@ -10,8 +10,6 @@
       content="I am Frontend developer with experience in JS, CSS, HTML, React, Accessibility."
     />
     <meta property="og:url" content="https://meligatt.github.io" />
-    <!-- <meta property="og:image"
-      content="https://s3-us-west-2.amazonaws.com/s.cdpn.io/708107/Melissa-gattoni-frontend-engineer.jpg" /> -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
@@ -31,75 +29,143 @@
     />
 
     <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="./falcon-a11y-styles.css" />
+    <link rel="stylesheet" href="./falcon-a11y/styles.css" />
   </head>
 
   <body class="blog">
     <div class="Wrapper">
       <div class="Header">
         <!-- bad: looks like title but it is not  -->
-        <div class="falcon-h1-title">Millenium Falcon Dashboard</div>
-        <!-- <h1 class="Blog-title">Millenium Falcon</h1> -->
+        <!-- <div class="falcon-h1-title">Millenium Falcon Dashboard</div> -->
+        <h1 class="highlighted-grey">Millennium Falcon Dashboard</h1>
+        <p class="falcon-aurebesh-text" aria-hidden="true">
+          May the force be with you
+        </p>
       </div>
 
       <main class="MainContent">
         <div class="Container">
-          <div>
-            <button class="falcon-btn-primary">action 1</button>
-            <button class="falcon-btn-primary">action 2</button>
-            <button class="falcon-btn-primary">action 3</button>
+          <div class="falcon-container">
+            <button class="btn falcon-btn-primary">action 1</button>
+            <button class="btn falcon-btn-secondary">action 2</button>
+            <!-- <button class="btn falcon-btn-tertiary">action 3</button> -->
+            <a class="btn btn-link falcon-btn-tertiary">action 4</a>
           </div>
-          <div>
-            <a class="falcon-link-primary" href="www.starwars.com">link 1</a>
-            <a class="falcon-link-primary" href="www.starwars.com">link 2</a>
-            <a class="falcon-link-primary" href="www.starwars.com">link 3</a>
+          <div class="falcon-container-secondary">
+            <h3 class="highlighted-blue">Run checks</h3>
+            <span aria-hidden="true" class="falcon-aurebesh-text-small">
+              run checks
+            </span>
+            <a class="falcon-link-primary" href="www.starwars.com"
+              >Escape pods</a
+            >
+            <a class="falcon-link-primary" href="www.starwars.com"
+              >hyperdrive</a
+            >
+            <a class="falcon-link-primary" href="www.starwars.com">Holotable</a>
           </div>
 
-          <div>
-            <a role="button" class="falcon-link-primary" onclick="myFunction()">
+          <div class="falcon-container">
+            <!-- bad -->
+            <button
+              class="falcon-link-primary"
+              onclick="jumpLightspeed()">
+              Jump to lightspeed
+            </button>
+            <a
+              role="button"
+              class="falcon-link-primary"
+              onclick="jumpLightspeed()"
+            >
               🚀
             </a>
-            <div id="demo"></div>
-          </div>
-
-          <div>
-            bad chack:
-            <input type="checkbox" id="scales" name="scales" checked />
-            <label>Scales</label>
-          </div>
-
-          <div>
-            good check:
-            <input type="checkbox" id="horns" name="horns" />
-            <label for="horns">Horns</label>
-          </div>
-
-          <fieldset class="Fieldset__FieldsetStyled-sc-5jxper-0 gCKcwT">
-            <legend class="Fieldset__LegendStyled-sc-5jxper-1 lnphGi">
-              Good: move with arrow keys
-            </legend>
-            <label for="cumulativeAccuracy" style="margin: 0.5rem 0px;"
-              ><input
-                type="radio"
-                id="cumulativeAccuracy"
-                name="option"
-                value="cumulativeAccuracy"
-                checked=""
-              />Accuracy</label
+            <a
+              role="button"
+              class="falcon-link-primary"
+              onclick="cancelLightspeed()"
             >
-            <label for="cumulativeBits" style="margin: 0.5rem 0px;"
-              ><input
-                type="radio"
-                id="cumulativeBits"
-                name="option"
-                value="cumulativeBits"
-              />Bits</label
-            >
-          </fieldset>
+              ❌
+            </a>
+            <!-- role=status -->
+            <span
+              id="lightspeed-status"
+              class="highlighted-white blink_me"
+            ></span>
+            <span id="lightspeed-status-2" class="highlighted-white"></span>
+          </div>
 
-          <fieldset class="Fieldset__FieldsetStyled-sc-5jxper-0 gCKcwT">
-            <!--  (ie. I'm totally guilty here:
-              http://tipresias.net/ ) -->
+          <div class="falcon-container">
+            <!-- <div>
+              bad chack:
+              <input type="checkbox" id="scales" name="scales" checked />
+              <label>Scales</label>
+            </div> -->
+
+            <div>
+              <h3 class="highlighted-blue">Navicomputer L3-37</h3>
+
+              <div>
+                <input type="checkbox" id="i-know" name="action1" />
+                <label for="i-know">I love you</label>
+              </div>
+
+              <div>
+                <input type="checkbox" id="about-this" name="action1" />
+                <label>I have a bad feeling</label>
+              </div>
+
+
+              <input
+                type="checkbox"
+                id="run-test"
+                name="action1"
+                class="checkbox"
+              />
+              <label for="run-test">Run tests</label>
+              <input
+                type="checkbox"
+                id="get-routes"
+                name="action2"
+                class="checkbox"
+              />
+              <label for="get-routes">Get hyperspace routes</label>
+              <input
+                type="checkbox"
+                id="restart"
+                name="action3"
+                class="checkbox"
+              />
+              <label for="restart">Download maps</label>
+            </div>
+          </div>
+
+          <div class="falcon-container">
+            <fieldset class="Fieldset__FieldsetStyled-sc-5jxper-0 gCKcwT">
+              <legend class="Fieldset__LegendStyled-sc-5jxper-1 lnphGi">
+                Launch
+              </legend>
+              <label for="cumulativeAccuracy" style="margin: 0.5rem 0px;"
+                ><input
+                  type="radio"
+                  id="cumulativeAccuracy"
+                  name="option"
+                  value="cumulativeAccuracy"
+                  checked=""
+                />Deflector shield generator
+              </label>
+              <label for="cumulativeBits" style="margin: 0.5rem 0px;"
+                ><input
+                  type="radio"
+                  id="cumulativeBits"
+                  name="option"
+                  value="cumulativeBits"
+                />Quad laser cannons</label
+              >
+            </fieldset>
+          </div>
+
+          <!-- <fieldset class="Fieldset__FieldsetStyled-sc-5jxper-0 gCKcwT">
+            (ie. I'm totally guilty here: http://tipresias.net/ )
             <legend class="Fieldset__LegendStyled-sc-5jxper-1 lnphGi">
               Bad: move with tab to select option
             </legend>
@@ -119,10 +185,10 @@
                 value="cumulativeBits"
               />Bits</label
             >
-          </fieldset>
+          </fieldset> -->
 
-          <div>
-            <!-- (bad) -->
+
+          <div class="falcon-container">
             <div class="falcon-toggle-button" onclick="toggleList()">
               Show Crew members
             </div>
@@ -134,66 +200,43 @@
               <li class="dqpl-option">R2D2</li>
             </ul>
           </div>
-          <!-- bad -->
-          <div>
+
+          <!-- (bad) -->
+          <div class="falcon-container">
+            <h3>Enemies
+              <span aria-hidden="true" class="falcon-aurebesh-text-small">Enemies</span>
+            </h3>
             <ul>
               <div>
-                <li>item 1</li>
-                <li>item 2</li>
-                <li>item 3</li>
+                <li>Jabba The Hutt</li>
+                <li>Greedo</li>
+                <div><li>All the other bounty hunters</li></div>
               </div>
             </ul>
           </div>
 
-          <!-- bad -->
-          <div>
-            <ul>
-              <div><li>item 1</li></div>
-              <div><li>item 2</li></div>
-              <div><li>item 3</li></div>
-            </ul>
-          </div>
-
           <!-- looks like list! but just generic divs, seantically AT don't read it as list, nor anounce items -->
-          <div class="falcon-cards">
+          <!-- <div class="falcon-cards">
             <div class="falcon-card-item">div card1</div>
             <div class="falcon-card-item">div card2</div>
             <div class="falcon-card-item">div card3</div>
-          </div>
+          </div> -->
           <!-- better: Screen reader will anounce: list item, 3 items -->
-          <ul class="falcon-cards">
-            <li class="falcon-card-item">li card1</li>
-            <li class="falcon-card-item">li card2</li>
-            <li class="falcon-card-item">li card3</li>
-          </ul>
+          <div class="falcon-container">
+            <h3>Friends
+              <span aria-hidden="true" class="falcon-aurebesh-text-small">Friends</span>
+            </h3>
+            <ul class="falcon-cards">
+              <li class="falcon-card-item">Leia 💘</li>
+              <li class="falcon-card-item">Chewbacca</li>
+              <li class="falcon-card-item">Lando</li>
+              <li class="falcon-card-item">Luke</li>
+            </ul>
+          </div>
 
-          <div>
-            <h2>
-              title 2
-            </h2>
-            <p>stuff...</p>
-            <p>stuff...</p>
-            <p>stuff...</p>
-          </div>
           <!-- headings: -->
-          <div>
-            <!-- h1 repeared -->
-            <div>
-              <h1>Falcon Manual:</h1>
-              <h2>Parts:</h2>
-              <h3>cockpit</h3>
-              <h3>weapons</h3>
-            </div>
-            <!-- bad for AT, h1 breaking hierarchy,  -->
-            <div>
-              <h1>Troubleshooting:</h1>
-              <h3>What to do when on Fire</h3>
-              <p>What to do when on Navicomputer failure</p>
-            </div>
-          </div>
           <!-- good -->
-          <!-- 
-            <div>
+          <!-- <div class="falcon-container">
             <h2>Falcon Manual:</h2>
             <h3>Parts:</h3>
             <h4>cockpit</h4>
@@ -202,34 +245,42 @@
             <h4>Fire</h4>
             <h4>Navicomputer failure</h4>
           </div> -->
-        </div>
+
+
         <!-- relay only on color for status -->
-        <div>
+        <!-- <div class="falcon-container">
           <div class="falcon-status-success">
-            🟢
+          🔵
           </div>
           <div class="falcon-status-error">
             🔴
           </div>
-        </div>
-        Better:
-        <div>
-          <div class="falcon-status-success">
-            🟢Sucess!
+        </div> -->
+
+        <div class="falcon-container">
+          <h3>stuff...</h3>
+          <div class="flex-row">
+            <div class="status falcon-status-success">
+              🔵 🟢Sucess!
+            </div>
+            <div class="status falcon-status-error">
+              🔴 Error!
+            </div>
           </div>
-          <div class="falcon-status-error">
-            🔴 Error!
-          </div>
         </div>
+
         <!-- color contrast -->
-        <div>
-          <button class="falcon-btn-shoot">
-            Shoot
+        <div class="falcon-container">
+          <button class="btn falcon-btn-play">
+            Play Holochess
+          </button>
+          <button class="btn falcon-btn-play">
+            Practice Shyriiwook
           </button>
         </div>
 
-        <div>
-          <!-- Examples on writing for A/C -->
+        <div class="falcon-container-secondary">
+          <h3>More accessible language in the Acceptance Criteria</h3>
           <ul>
             <li>I can Click on the button and a thing will open</li>
             <li>
@@ -240,26 +291,42 @@
           </ul>
         </div>
 
-        <div>
+        <div class="falcon-container">
           <!-- learn the basic shortcuts for Screen readers -->
-          Lear the basic shortcuts to:
+          <h3>Learn the basic VoiceOver (mac) or other screen sreader shortcuts</h3>
           <ul>
             <li>Turn On/Off VoiceOver</li>
             <li>Adjust VoiceOver settings</li>
             <li>
               Open VoiceOver rotor
             </li>
-            <li>navigation with keyboard (get to the url bar)</li>
-            <li>w3c Authoring practices</li>
+            <li>
+              Check on-the-go
+            </li>
+
+          </ul>
+        </div>
+        <div class="falcon-container">
+          <!-- learn the basic shortcuts for Screen readers -->
+          <h3>Credits:</h3>
+          <ul>
+            <li>Background circuit SVG: https://www.heropatterns.com/</li>
+            <li>Aurebesh font: https://www.dafont.com/aurebesh.font</li>
           </ul>
         </div>
       </main>
     </div>
 
     <script>
-      function myFunction() {
-        document.getElementById("demo").innerHTML =
-          "Jumping to lightspeed in 3..2..1..";
+      function jumpLightspeed() {
+        document.getElementById("lightspeed-status").innerHTML =
+          "Calculating coordinates! Jumping to lightspeed in 3..2..1..";
+        document.getElementById("lightspeed-status-2").innerHTML = "";
+      }
+      function cancelLightspeed() {
+        document.getElementById("lightspeed-status").innerHTML = "";
+        document.getElementById("lightspeed-status-2").innerHTML =
+          "Operation: cancelled";
       }
 
       function toggleList() {

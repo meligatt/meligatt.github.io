@@ -1,5 +1,5 @@
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1.4rem;
   font-weight: 300;
   background-color: #ffffff;
@@ -49,7 +49,7 @@ a {
 }
 
 .Header-title {
-  font-family: 'PT Serif', serif;
+  font-family: "PT Serif", serif;
   font-size: 2rem;
   font-weight: bold;
   text-transform: uppercase;
@@ -58,26 +58,26 @@ a {
 
 .Header-subTitle {
   color: #921d7d;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1.1rem;
 }
 
 .Blog-title {
-  font-family: 'PT Serif', serif;
+  font-family: "PT Serif", serif;
   font-size: 1.8rem;
   font-weight: 400;
   margin: 0.5rem 0;
 }
 
 .Post-title {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1.4rem;
   font-weight: 400;
   margin: 1rem 0;
 }
 
 .Blog-subTitle {
-  color:#921d7d;
+  color: #921d7d;
   font-size: 1.2rem;
   padding: 0 2rem;
   font-weight: bold;
@@ -203,15 +203,15 @@ a {
   width: 40%;
   margin: 0.5rem 0.5rem;
   color: #ee4c83;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1rem;
   font-weight: bold;
-  background-color: #EBEBEB;
-  border: 3px solid #292A2C;
+  background-color: #ebebeb;
+  border: 3px solid #292a2c;
   border-radius: 8px;
-  -webkit-box-shadow: -4px 4px 0 #E5E5E5;
-  box-shadow: -4px 4px 0 #E5E5E5;
-  text-shadow: 2px 2px 0 #FFFFFF;
+  -webkit-box-shadow: -4px 4px 0 #e5e5e5;
+  box-shadow: -4px 4px 0 #e5e5e5;
+  text-shadow: 2px 2px 0 #ffffff;
 }
 
 @media (min-width: 480px) {
@@ -228,19 +228,19 @@ a {
 
 .Network-item::before {
   position: absolute;
-  content: '';
+  content: "";
   width: 96%;
   height: 1px;
   top: 1px;
   left: 2px;
-  border-top: 4px solid #FFFFFF;
+  border-top: 4px solid #ffffff;
   border-radius: 4px;
 }
 
 .Network-item:hover {
   background-color: #d2d2d2;
-  -webkit-animation: shake .2s ease-in;
-  animation: shake .2s ease-in;
+  -webkit-animation: shake 0.2s ease-in;
+  animation: shake 0.2s ease-in;
   -webkit-animation-iteration-count: 2;
   animation-iteration-count: 2;
 }
@@ -319,7 +319,8 @@ a {
 }
 
 @-webkit-keyframes shake {
-  0%, 100% {
+  0%,
+  100% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
@@ -334,7 +335,8 @@ a {
 }
 
 @keyframes shake {
-  0%, 100% {
+  0%,
+  100% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
@@ -369,10 +371,10 @@ a {
   position: relative;
   display: block;
   width: 30%;
-  color: #EBEBEB;
+  color: #ebebeb;
   text-align: center;
-  background-color: #292A2C;
-  border: 10px solid #292A2C;
+  background-color: #292a2c;
+  border: 10px solid #292a2c;
   border-radius: 4px;
 }
 
@@ -388,6 +390,6 @@ figcaption {
 }
 
 .Card-name a {
-  color: #292A2C;
+  color: #292a2c;
   text-decoration-style: dashed;
 }
